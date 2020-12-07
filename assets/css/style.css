@@ -1,19 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* GLOBAL */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* HEADER */
 header {
   background-image: url(../images/background-header.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
-  border-bottom: 5px solid #0864b385;
+  border-bottom: 5px solid #6e6e6e85;
+}
+
+.header-search {
+  position: absolute;
+  top: -8%;
+  left: 108%;
+  width: 299px;
+  height: 34px;
+}
+
+.header-search i {
+  position: relative;
+  top: 87%;
+  left: 5%;
+  font-size: 12px;
+  color: white;
+}
+
+.header-search input {
+  padding: 14px 0 12px 30px;
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background: #ffffff66;
+  border: 2px solid #807c7c;
+  border-radius: 12px;
+}
+.header-search input:focus {
+  padding: 14px 0 12px 30px;
+  background: #ffffff66;
+  color: white;
+}
+
+.header-search input::placeholder {
+  color: white;
 }
 
 .home-title {
   position: absolute;
   top: 29%;
   left: 33%;
+}
+
+.logo-header {
+  display: block;
+  position: relative;
+  top: -12%;
+  left: -38%;
+}
+
+.logo-header img {
+  width: 138px;
+  height: 138px;
 }
 
 .home-title h1 {
@@ -39,7 +88,7 @@ header {
 .box-header {
   display: block;
   margin: 0 auto;
-  padding: 21px;
+  padding: 15px 21px 15px 21px;
   text-align: center;
   width: 636px;
   height: 304px;
@@ -55,6 +104,14 @@ header {
 
 .header-btn a {
   display: block;
+}
+
+.nav-per {
+  position: relative;
+  margin: -70px auto -21px 0;
+  top: -76%;
+  width: 100%;
+  height: 65px;
 }
 
 /* HEADER FIN */
@@ -74,19 +131,57 @@ header {
   border: 2px solid #9e9e9e;
   color: #ddd0d0 !important;
   text-decoration: none !important;
+  transition: all 500ms;
 }
 .btn-header:hover {
   border-radius: 10px;
   box-shadow: 0 0 11px 5px #3f867685;
   border: 2px solid #797979;
   color: #ddd0d0a6 !important;
-  transition: all 500ms;
 }
 
 .btn-header i {
   margin: 0 4px 0 0;
 }
 
+.btn-nav {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px;
+  width: 155px;
+  height: 45px;
+  font-family: "Kanit", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: white;
+  text-decoration: none !important;
+  background: #0000007c;
+  border: 1px solid #212121;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transition: all 500ms;
+}
+.btn-nav:hover {
+  border: 1px solid #424040;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #2d2c2c7c;
+  color: #ffffffa6;
+}
+
+.btn-nav i {
+  margin: 0 6px 0 0;
+}
+
 /* HEADER BTN FIN */
+/* GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
