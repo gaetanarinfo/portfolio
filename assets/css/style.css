@@ -224,6 +224,30 @@ header {
   color: #4e4d4d;
 }
 
+/* BUTTON SECTION 2 */
+.btn-cards {
+  display: block;
+  margin: 0px auto;
+  padding: 7px;
+  width: 124px;
+  height: 36px;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  text-decoration: none !important;
+  background: #0275d8;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #2196f38a;
+  transition: all 500ms;
+}
+.btn-cards:hover {
+  background-color: #0162b6;
+  box-shadow: 0 0 5px #196eb38a;
+  border-radius: 10px !important;
+  color: white;
+}
+
 @media only screen and (max-width: 1300px) {
   /* HEADER */
   .home-title {
@@ -421,6 +445,58 @@ header {
 
 .triangle-5 {
   left: 42%;
+}
+
+/* Section 2 */ 
+.card-icon {
+  position: relative;
+  margin: 10px auto 10px auto;
+}
+
+.card-btn, .card-date {
+  position: relative;
+  display: inline-block;
+}
+
+.card-btn {
+  float: right;
+}
+
+.card-date {
+  top: 8px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333333;
+}
+
+.card-date span {
+  padding: 0 0 0 4px;
+}
+
+.card-text {
+  font-size: 14px;
+  font-family: "Source Sans Pro";
+  color: #333333;
+  font-weight: normal;
+}
+
+.card-icon a:nth-child(1) {
+  font-size: 20px;
+  color: #832626;
+  margin: 0 10px 0 0;
+  text-decoration: none;
+}
+.card-icon a:nth-child(1):hover {
+  color: #923535;
+}
+
+.card-icon a:nth-child(2) {
+  font-size: 20px;
+  color: #346a9d;
+}
+.card-icon a:nth-child(2):hover {
+  color: #4c85bb;
 }
 
 /* Color Boostrap En plus */
