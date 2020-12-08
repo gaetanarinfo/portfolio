@@ -8,9 +8,9 @@ header
     border-bottom: 5px solid #6e6e6e85
 
 .header-search
-    position: absolute
-    top: -8%
-    left: 108%
+    display: inline-block
+    position: relative
+    left: 79%
     width: 299px
     height: 34px
 
@@ -39,19 +39,18 @@ header
     color: white 
 
 .home-title
-    position: absolute
-    top: 29%
-    left: 33%
+    position: relative
+    margin: 71px auto
 
 .logo-header
-    display: block
+    display: inline-block
     position: relative
     top: -12%
-    left: -38%
+    left: -20%
 
 .logo-header img
-    width: 138px
-    height: 138px    
+    width: 120px
+    height: 120px    
 
 .home-title h1
     color: #ddd0d0 
@@ -94,5 +93,23 @@ header
     top: -76%
     width: 100%
     height: 65px
+
+.nav-mob
+    display: none
+    position: relative
+    width: 72px
+    left: 3px
+    margin: -85px auto 0px 0
+
+.dropdown-item
+    font-family: 'Lobster'
+    letter-spacing: 2px
+
+.dropdown-item a
+    &:hover
+        margin-left: 8px 
+
+.dropdown-item i
+    margin-right: 8px
 
 /* HEADER FIN */
