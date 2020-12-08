@@ -249,7 +249,6 @@ header {
 }
 
 @media only screen and (max-width: 1300px) {
-  /* HEADER */
   .home-title {
     margin: -84px auto !important;
   }
@@ -269,11 +268,11 @@ header {
   }
 
   .box-header {
-    max-width: 327px;
-    height: 370px;
+    max-width: 281px;
+    height: 340px;
+    font-size: 40px;
   }
 
-  /* HEADER LOGO */
   .logo-header {
     left: -6%;
   }
@@ -283,7 +282,6 @@ header {
     height: 90px;
   }
 
-  /* HEADER NAVIGATION */
   .nav-per {
     display: none;
   }
@@ -291,9 +289,12 @@ header {
   .nav-mob {
     display: block;
   }
+
+  .header-search-mob {
+    width: 208px;
+  }
 }
 @media only screen and (max-width: 600px) {
-  /* HEADER */
   .home-title {
     margin: 26px auto !important;
   }
@@ -303,7 +304,10 @@ header {
     margin: 20px auto;
   }
 
-  /* PROGRESS BAR COMPETENCE */
+  .home-title h1 {
+    font-size: 40px;
+  }
+
   .rect-prog {
     left: 88% !important;
   }
