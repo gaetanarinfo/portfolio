@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* IMPORT FONT */    
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
@@ -5,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+/* IMPORT SASS */  
 /* HEADER */
 header {
   background-image: url(../images/background-header.jpeg);
@@ -14,6 +17,7 @@ header {
   border-bottom: 5px solid #6e6e6e85;
 }
 
+/* HEADER INPUT */
 .header-search {
   display: inline-block;
   position: relative;
@@ -50,21 +54,10 @@ header {
   color: white;
 }
 
+/* HEADER TITRE */
 .home-title {
   position: relative;
   margin: 71px auto;
-}
-
-.logo-header {
-  display: inline-block;
-  position: relative;
-  top: -12%;
-  left: -20%;
-}
-
-.logo-header img {
-  width: 120px;
-  height: 120px;
 }
 
 .home-title h1 {
@@ -87,6 +80,20 @@ header {
   font-size: 30px;
 }
 
+/* HEADER LOGO */
+.logo-header {
+  display: inline-block;
+  position: relative;
+  top: -12%;
+  left: -20%;
+}
+
+.logo-header img {
+  width: 120px;
+  height: 120px;
+}
+
+/* HEADER BOX */     
 .box-header {
   display: block;
   margin: 0 auto;
@@ -100,14 +107,7 @@ header {
   border-radius: 22px;
 }
 
-.header-btn {
-  display: block;
-}
-
-.header-btn a {
-  display: block;
-}
-
+/* HEADER NAVIGABLE */    
 .nav-per {
   position: relative;
   margin: -70px auto -21px 0;
@@ -138,7 +138,16 @@ header {
 }
 
 /* HEADER FIN */
+/* BTN */
 /* HEADER BTN */
+.header-btn {
+  display: block;
+}
+
+.header-btn a {
+  display: block;
+}
+
 .btn-header {
   margin: 20px auto;
   padding: 12px;
@@ -196,6 +205,7 @@ header {
   color: #ffffffa6;
 }
 
+/* BTN NAVIGATION */
 .btn-nav i {
   margin: 0 6px 0 0;
 }
@@ -214,8 +224,8 @@ header {
   color: #4e4d4d;
 }
 
-/* HEADER BTN FIN */
 @media only screen and (max-width: 1300px) {
+  /* HEADER */
   .home-title {
     margin: -84px auto !important;
   }
@@ -239,6 +249,7 @@ header {
     height: 370px;
   }
 
+  /* HEADER LOGO */
   .logo-header {
     left: -6%;
   }
@@ -248,6 +259,7 @@ header {
     height: 90px;
   }
 
+  /* HEADER NAVIGATION */
   .nav-per {
     display: none;
   }
@@ -257,6 +269,7 @@ header {
   }
 }
 @media only screen and (max-width: 600px) {
+  /* HEADER */
   .home-title {
     margin: 26px auto !important;
   }
@@ -266,14 +279,57 @@ header {
     margin: 20px auto;
   }
 
+  /* PROGRESS BAR COMPETENCE */
   .rect-prog {
     left: 88% !important;
+  }
+
+  .rect-prog-2 {
+    left: 79% !important;
+  }
+
+  .rect-prog-3 {
+    left: 54% !important;
+  }
+
+  .rect-prog-4 {
+    left: 39% !important;
+  }
+
+  .rect-prog-5 {
+    left: 34% !important;
   }
 
   .triangle {
     left: 95% !important;
   }
+
+  .triangle-2 {
+    left: 86% !important;
+  }
+
+  .triangle-3 {
+    left: 61% !important;
+  }
+
+  .triangle-4 {
+    left: 46% !important;
+  }
+
+  .triangle-5 {
+    left: 41% !important;
+  }
 }
+/* Titre Section */
+.title-h {
+  text-align: center;
+  font-family: "Kanit";
+  color: #e0e0e0;
+  font-weight: 500;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
 /* Section 1 */
 .h-2 {
   height: 2px;
@@ -291,6 +347,7 @@ header {
   color: #f5f5f5;
 }
 
+/* PROGRESS BAR COMPETENCE */
 .bar-perso {
   background-color: #f5f5f57d;
   border-radius: 20px;
@@ -312,6 +369,18 @@ header {
 
 .rect-prog-2 {
   left: 82%;
+}
+
+.rect-prog-3 {
+  left: 57%;
+}
+
+.rect-prog-4 {
+  left: 42%;
+}
+
+.rect-prog-5 {
+  left: 37%;
 }
 
 .rect-prog .text {
@@ -342,32 +411,58 @@ header {
   left: 87%;
 }
 
-/* Section 1 End */    
-.title-h {
-  text-align: center;
-  font-family: "Kanit";
-  color: #e0e0e0;
-  font-weight: 500;
+.triangle-3 {
+  left: 62%;
 }
 
+.triangle-4 {
+  left: 47%;
+}
+
+.triangle-5 {
+  left: 42%;
+}
+
+/* Color Boostrap En plus */
+.bg-purple {
+  background-color: #9c27b0d6 !important;
+}
+
+.bg-pink {
+  background-color: #be167ed6 !important;
+}
+
+.bg-orange {
+  background-color: #FFA500 !important;
+}
+
+/* Quote */ 
 .blockquote {
   font-family: "Martel";
   letter-spacing: 1px;
   color: #e0e0e0;
   font-weight: 600;
   font-size: 16px;
+  line-height: 43px;
 }
 
 .blockquote .fa-quote-left {
   margin-right: 10px;
+  font-size: 30px;
 }
 
 .blockquote .fa-quote-right {
   margin-left: 10px;
+  font-size: 30px;
 }
 
-.bg-purple {
-  background-color: #9c27b0d6 !important;
+/* Séparateur */
+.separator {
+  position: relative;
+  margin: 22px auto 0 auto;
+  height: 4px;
+  border: 3px solid #f8f9fa;
+  border-radius: 2px;
 }
 
 /* GLOBAL */
