@@ -1,14 +1,19 @@
-/* Color Boostrap En plus */
+/* Color Boostrap */
 
 .bg-purple
-    background-color: #9c27b0d6 !important
+    background-color: $purple-400
 
 .bg-pink
-    background-color: #be167ed6 !important
+    background-color: $pink-700
 
 .bg-orange
-    background-color: #FFA500 !important
+    background-color: $orange-400
 
+/* Margin négatif Bootstrap */
+
+@for $margin from 1 through 4
+    .mt-n#{$margin}
+        margin:-($margin * .25rem) auto
 
 /* Quote */ 
 
@@ -35,4 +40,5 @@
     margin: 22px auto 0 auto
     height: 4px
     border: 3px solid #f8f9fa
+    background-color: #f8f9fa
     border-radius: 2px  

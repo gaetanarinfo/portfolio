@@ -2,7 +2,7 @@
 
 .title-h
     text-align: center
-    font-family: 'Kanit'
+    font-family: 'Kanit', sans-serif
     color: #e0e0e0
     font-weight: 500
     font-size: 26px
@@ -11,7 +11,7 @@
 /* Section 1 */
 
 .h-2
-    height: 2px
+    height: 3px !important
 
 .title-bar
     position: relative
@@ -35,7 +35,7 @@
     position: relative
     padding: 0px 0px 24px 17px
     z-index: 9
-    top: 26%
+    top: 29%
     left: 92%
     width: 63px
     height: 21px
@@ -103,7 +103,7 @@
     float: right    
 
 .card-date
-    top: 8px
+    top: 6px
     font-family: 'Source Sans Pro', sans-serif
     font-weight: 600
     font-size: 14px
@@ -133,3 +133,202 @@
         color: #346a9d
         &:hover
             color: #4c85bb
+
+
+/* Section 3 */
+#slider
+    height: auto
+    width: 100%
+
+.d-block
+    position: relative
+    margin: 0 auto
+
+.carousel-item
+    height: auto
+
+.carousel-indicators li
+    margin: 0px 7px 0 7px
+    width: 15px
+    height: 15px
+    border-radius: 100%
+
+.carousel-indicators
+    bottom: -42px
+
+.carousel-inner
+    height: 349px
+
+.carousel-box
+    position: relative
+    margin: 0 auto 0 auto
+    width: 87%
+    height: auto
+    background-color: #fafafa
+    border-radius: 10px
+    box-shadow: 0 0 14px 2px #9c9ca778
+
+.carousel-box p
+    position: relative
+    padding: 12px 26px 12px 54px
+    font-family: 'Karla', sans-serif
+    font-size: 16px
+    text-align: left
+    color: #333333
+    letter-spacing: 1px
+
+.carousel-box p i
+    position: absolute
+    left: 13px
+    top: 11px
+    color: #5d0e0ea3
+    font-size: 23px
+
+.carousel-triangle
+    position: relative
+    margin: 0 auto
+    z-index: 1
+    left: 49%
+    top: 10px
+    display: inline-block
+    transform: scaleX(2)
+    color: #fafafa
+    text-shadow: 0 0 0px #fafafa, 0px 0 1px #fafafa
+    font-size: 22px
+
+/* Section 4 */
+
+.img-thumb
+    padding: 3px
+    background-color: #6f6d6d
+    border: 0px solid #6f6d6d
+    border-radius: 11px
+    width: 100%
+    box-shadow: 0 0 8px 0px #6f6d6d
+    cursor: pointer
+    transition: all 500ms
+    &:hover   
+        opacity: 0.6
+
+img.zoom
+    width: 100%
+    height: 200px
+    border-radius: 5px
+    object-fit: cover
+    -webkit-transition: all .3s ease-in-out
+    -moz-transition: all .3s ease-in-out
+    -o-transition: all .3s ease-in-out
+    -ms-transition: all .3s ease-in-out
+
+.transition
+    -webkit-transform: scale(1.2)
+    -moz-transform: scale(1.2)
+    -o-transform: scale(1.2)
+    transform: scale(1.2)
+
+.thumb
+    margin-bottom: 30px
+
+/* Section 5 */
+
+.card-yt
+    width: auto
+    height: 234px     
+
+/* Section 6 */
+
+.tab-title
+    position: relative
+    margin: 0 auto 28px auto
+    font-size: 22px
+    text-transform: uppercase
+    font-family: "Kanit"
+    color: #e0e0e0
+    letter-spacing: 1px
+    width: auto
+    &::after
+        display: block
+        margin: 15px auto 0px auto
+        border-bottom: 3px solid #f8f9fa
+        height: 0px
+        width: auto
+        content: " "
+
+.tab-img
+    position: relative
+    background: url(https://cahiersdescharges.com/wp-content/uploads/edd/2018/02/theme-couv-cdc-dev-1000x680.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    width: 100%
+    height: 260px  
+
+.tab-img
+    position: relative
+    background: url(https://cahiersdescharges.com/wp-content/uploads/edd/2018/02/theme-couv-cdc-dev-1000x680.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    width: 100%
+    height: 260px  
+
+.tab-content p
+    position: relative
+    margin: 6px auto 0px auto
+    font-size: 15px
+    color: #e0e0e0
+    font-family: 'Arimo'
+    &::after
+        display: block
+        margin: 15px auto 0px auto
+        border-bottom: 3px solid #f8f9fa
+        height: 0px
+        width: auto
+        content: " "
+
+.tab-icon
+    display: block
+    font-size: 23px
+    color: $indigo-800 
+
+.tab-icon span
+    display: inline-block
+    position: relative
+    top: -2px
+    left: 6px
+    font-size: 14px
+    font-family: 'Source Sans Pro'
+    font-weight: 600
+    color: #e0e0c7
+
+.tab-icon .tab-user
+    left: 12px
+
+.list-group-item i
+    margin: 0 2px 0 auto
+    font-size: 13px    
+
+/* Section 7 */
+    
+.subtitle-h
+    text-align: center
+    font-family: 'Kanit', sans-serif
+    color: #e0e0e0
+    font-weight: 500
+    font-size: 19px
+    text-transform: uppercase
+
+.social
+    position: relative
+    display: inline-block
+    
+.social-icon-1
+    background-image: url(../images/social.png)
+    background-position: -10px -15px
+    background-size: 194px 138px
+    height: 54px
+    width: 58px
+    transition: all 300ms
+    cursor: pointer
+    &:hover
+        opacity: 0.6
