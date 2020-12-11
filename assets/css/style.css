@@ -11044,6 +11044,15 @@ header {
   }
 
   .fb_iframe_widget iframe {
+    width: 348px !important;
+  }
+
+  .fb_iframe_widget span {
+    width: 296px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .fb_iframe_widget iframe {
     width: 296px !important;
   }
 }
@@ -11564,6 +11573,87 @@ img.zoom {
   margin: -5rem auto;
 }
 
+/* Margin positif Bootstrap 0 à 20 */
+.mt-1 {
+  margin: 0.25rem auto 0 auto;
+}
+
+.mt-2 {
+  margin: 0.5rem auto 0 auto;
+}
+
+.mt-3 {
+  margin: 0.75rem auto 0 auto;
+}
+
+.mt-4 {
+  margin: 1rem auto 0 auto;
+}
+
+.mt-5 {
+  margin: 1.25rem auto 0 auto;
+}
+
+.mt-6 {
+  margin: 1.5rem auto 0 auto;
+}
+
+.mt-7 {
+  margin: 1.75rem auto 0 auto;
+}
+
+.mt-8 {
+  margin: 2rem auto 0 auto;
+}
+
+.mt-9 {
+  margin: 2.25rem auto 0 auto;
+}
+
+.mt-10 {
+  margin: 2.5rem auto 0 auto;
+}
+
+.mt-11 {
+  margin: 2.75rem auto 0 auto;
+}
+
+.mt-12 {
+  margin: 3rem auto 0 auto;
+}
+
+.mt-13 {
+  margin: 3.25rem auto 0 auto;
+}
+
+.mt-14 {
+  margin: 3.5rem auto 0 auto;
+}
+
+.mt-15 {
+  margin: 3.75rem auto 0 auto;
+}
+
+.mt-16 {
+  margin: 4rem auto 0 auto;
+}
+
+.mt-17 {
+  margin: 4.25rem auto 0 auto;
+}
+
+.mt-18 {
+  margin: 4.5rem auto 0 auto;
+}
+
+.mt-19 {
+  margin: 4.75rem auto 0 auto;
+}
+
+.mt-20 {
+  margin: 5rem auto 0 auto;
+}
+
 .ml-1 {
   margin: 0 0.25rem 0 auto;
 }
@@ -11724,84 +11814,84 @@ img.zoom {
   margin: 0 auto 0 5rem;
 }
 
-.mt-1 {
-  margin: 0.25rem auto 0 auto;
+.mb-1 {
+  margin: 0 auto 0.25rem auto;
 }
 
-.mt-2 {
-  margin: 0.5rem auto 0 auto;
+.mb-2 {
+  margin: 0 auto 0.5rem auto;
 }
 
-.mt-3 {
-  margin: 0.75rem auto 0 auto;
+.mb-3 {
+  margin: 0 auto 0.75rem auto;
 }
 
-.mt-4 {
-  margin: 1rem auto 0 auto;
+.mb-4 {
+  margin: 0 auto 1rem auto;
 }
 
-.mt-5 {
-  margin: 1.25rem auto 0 auto;
+.mb-5 {
+  margin: 0 auto 1.25rem auto;
 }
 
-.mt-6 {
-  margin: 1.5rem auto 0 auto;
+.mb-6 {
+  margin: 0 auto 1.5rem auto;
 }
 
-.mt-7 {
-  margin: 1.75rem auto 0 auto;
+.mb-7 {
+  margin: 0 auto 1.75rem auto;
 }
 
-.mt-8 {
-  margin: 2rem auto 0 auto;
+.mb-8 {
+  margin: 0 auto 2rem auto;
 }
 
-.mt-9 {
-  margin: 2.25rem auto 0 auto;
+.mb-9 {
+  margin: 0 auto 2.25rem auto;
 }
 
-.mt-10 {
-  margin: 2.5rem auto 0 auto;
+.mb-10 {
+  margin: 0 auto 2.5rem auto;
 }
 
-.mt-11 {
-  margin: 2.75rem auto 0 auto;
+.mb-11 {
+  margin: 0 auto 2.75rem auto;
 }
 
-.mt-12 {
-  margin: 3rem auto 0 auto;
+.mb-12 {
+  margin: 0 auto 3rem auto;
 }
 
-.mt-13 {
-  margin: 3.25rem auto 0 auto;
+.mb-13 {
+  margin: 0 auto 3.25rem auto;
 }
 
-.mt-14 {
-  margin: 3.5rem auto 0 auto;
+.mb-14 {
+  margin: 0 auto 3.5rem auto;
 }
 
-.mt-15 {
-  margin: 3.75rem auto 0 auto;
+.mb-15 {
+  margin: 0 auto 3.75rem auto;
 }
 
-.mt-16 {
-  margin: 4rem auto 0 auto;
+.mb-16 {
+  margin: 0 auto 4rem auto;
 }
 
-.mt-17 {
-  margin: 4.25rem auto 0 auto;
+.mb-17 {
+  margin: 0 auto 4.25rem auto;
 }
 
-.mt-18 {
-  margin: 4.5rem auto 0 auto;
+.mb-18 {
+  margin: 0 auto 4.5rem auto;
 }
 
-.mt-19 {
-  margin: 4.75rem auto 0 auto;
+.mb-19 {
+  margin: 0 auto 4.75rem auto;
 }
 
-.mt-20 {
-  margin: 5rem auto 0 auto;
+.mb-20 {
+  margin: 0 auto 5rem auto;
 }
 
 /* Form BootStrap */
@@ -11851,6 +11941,25 @@ footer {
 
 .footer-copyright {
   background-color: #302a2a;
+  color: #d6e0e0;
+}
+
+.page-footer h5, .page-footer .h5 {
+  color: #d6e0e0;
+}
+
+.page-footer li a {
+  text-decoration: none;
+  color: #dededd;
+  font-size: 14px;
+  font-family: "Martel", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  transition: 500ms;
+}
+.page-footer li a:hover {
+  padding: 0 0px 0 37px;
+  color: #7c7c79;
 }
 
 /* GLOBAL */

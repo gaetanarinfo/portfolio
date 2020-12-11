@@ -15,6 +15,12 @@
     .mt-n#{$margin}
         margin:-($margin * .25rem) auto
 
+/* Margin positif Bootstrap 0 à 20 */
+
+@for $margin from 1 through 20
+    .mt-#{$margin}
+        margin: ($margin * .25rem) auto 0 auto   
+
 @for $margin from 1 through 20
     .ml-#{$margin}
         margin: 0 ($margin * .25rem) 0 auto   
@@ -24,9 +30,9 @@
         margin: 0 auto 0 ($margin * .25rem)   
 
 @for $margin from 1 through 20
-    .mt-#{$margin}
-        margin: ($margin * .25rem) auto 0 auto   
-
+    .mb-#{$margin}
+        margin: 0 auto ($margin * .25rem) auto 
+        
 /* Form BootStrap */
 
 label
