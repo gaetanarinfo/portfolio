@@ -961,6 +961,42 @@
     </footer>
     <!-- Footer -->
 
+    <!-- Notification -->
+    <div class="container">
+        <div class="row">
+            <div aria-live="polite" aria-atomic="true" style="position: fixed;top: 0;bottom: 1em;right: 1em;min-height: 0;">
+                <div id="message_valide" role="alert" aria-live="assertive" aria-atomic="true" class="toast fade hide" data-autohide="false" style="position: fixed;top: 94px;right: 0;">
+                    <div class="toast-header">
+                        <i class="fas fa-bell mr-1" aria-hidden="true"></i>
+                        <strong class="mr-auto">Formulaire de contact</strong>
+                        <button type="button" class="ml-2 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+                    </div>
+                    <div class="toast-body">
+                        Merci de votre message, je ne manquerais pas de vous répondre !
+                    </div>
+                </div>
+            </div>
+
+            <div aria-live="polite" aria-atomic="true" style="position: fixed;bottom: 1em;right: 1em;min-height: 0;">
+                <div id="message_erreur" role="alert" aria-live="assertive" aria-atomic="true" class="toast fade hide" data-autohide="false" style="position: fixed;top: 0;right: 0;">
+                    <div class="toast-header">
+                        <i class="fas fa-bell mr-1" aria-hidden="true"></i>
+                        <strong class="mr-auto">Formulaire de contact</strong>
+                        <button type="button" class="ml-2 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+                    </div>
+                    <div class="toast-body">
+                        Merci de votre message, je ne manquerais pas de vous répondre !
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Notification -->
+
     <!-- js icons -->
     <script src="assets/vendor/icons/9d1d83a1dd.js"></script>
 
@@ -988,6 +1024,21 @@
                 $(this).removeClass('transition ');
             });
         });
+    </script>
+
+    <script>
+        $('#message_valide').toast('show');
+        $('#message_erreur').toast('show');
+
+        $("#message_erreur").click(function(e) {
+            e.preventDefault();
+            $('#message_valide').css('top', '0px');
+        });
+
+        setTimeout(function() {
+            $('#message_valide').css('top', '0px');
+            $("#message_valide").toast('dispose');
+        }, 2500);
     </script>
 
 </body>
