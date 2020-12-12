@@ -11917,6 +11917,11 @@ label {
   color: #e0e0e0;
 }
 
+/* Display Boostrap */
+.d-none {
+  display: none;
+}
+
 /* Quote */ 
 .blockquote {
   font-family: "Martel";
@@ -11979,6 +11984,30 @@ button.close {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+/* Modal Boostrap */
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Arimo";
+  font-weight: 700;
+}
+
+.modal-body a {
+  font-family: "Lobster";
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #413e3a;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 500ms;
+}
+.modal-body a:hover {
+  color: #515150 !important;
 }
 
 footer {
