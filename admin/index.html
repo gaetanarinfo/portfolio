@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Administration du site internet</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+
+</head>
+
+<body>
+
+    <div class="w-100">
+        <div class="cont">
+            <div class="row justify-content-left">
+                <div class="container container-center w-100">
+                    <div class="row justify-content-center">
+                        <div>
+                            <p class="text-center">Liste des membres du site internet</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <table class="table table-hover table-dark text-center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">Nom et Prénom</th>
+                                        <th scope="col">Adresse email</th>
+                                        <th scope="col">Rang</th>
+                                        <th scope="col">Date d'inscription</th>
+                                        <th scope="col">Gestion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="th-perso">1</th>
+                                        <td class="th-perso">Seigneur Gaëtan</td>
+                                        <td class="th-perso">gaetanarinfo@gmail.com</td>
+                                        <td class="th-perso">Administrateur</td>
+                                        <td class="th-perso">23/11/2020</td>
+                                        <td class="th-perso"><a href="" id="user_edit1" data-toggle="tooltip" data-placement="top" title="Editer le membre"><i class="fas fa-user-edit ml-2"></i></a>
+                                            <a href="" id="user_delete1" data-toggle="tooltip" data-placement="top" title="Supprimer un membre"><i class="fas fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="th-perso">2</th>
+                                        <td class="th-perso">Seigneur Gaëtan</td>
+                                        <td class="th-perso">gaetanarinfo@gmail.com</td>
+                                        <td class="th-perso">Administrateur</td>
+                                        <td class="th-perso">23/11/2020</td>
+                                        <td class="th-perso"><a href="" id="user_edit2" data-toggle="tooltip" data-placement="top" title="Editer le membre"><i class="fas fa-user-edit ml-2"></i></a>
+                                            <a href="" id="user_delete2" data-toggle="tooltip" data-placement="top" title="Supprimer un membre"><i class="fas fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="th-perso">3</th>
+                                        <td class="th-perso">Seigneur Gaëtan</td>
+                                        <td class="th-perso">gaetanarinfo@gmail.com</td>
+                                        <td class="th-perso">Administrateur</td>
+                                        <td class="th-perso">23/11/2020</td>
+                                        <td class="th-perso"><a href="" id="user_edit3" data-toggle="tooltip" data-placement="top" title="Editer le membre"><i class="fas fa-user-edit ml-2"></i></a>
+                                            <a href="" id="user_delete3" data-toggle="tooltip" data-placement="top" title="Supprimer un membre"><i class="fas fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="th-perso">4</th>
+                                        <td class="th-perso">Seigneur Gaëtan</td>
+                                        <td class="th-perso">gaetanarinfo@gmail.com</td>
+                                        <td class="th-perso">Administrateur</td>
+                                        <td class="th-perso">23/11/2020</td>
+                                        <td class="th-perso"><a href="" id="user_edit4" data-toggle="tooltip" data-placement="top" title="Editer le membre"><i class="fas fa-user-edit ml-2"></i></a>
+                                            <a href="" id="user_delete4" data-toggle="tooltip" data-placement="top" title="Supprimer un membre"><i class="fas fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-menu-left">
+
+                    <div class="card-profil">
+                        <div class="m-auto text-center">
+                            <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/SA/en/999/EP0001-CUSA02376_00-AV00000000000011/1601165358000/image?w=240&amp;h=240&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000" alt="Gaëtan Seigneur" width="117"
+                                class="rounded-circle mt-4">
+                        </div>
+
+                        <div class="m-auto text-center mt-3">
+                            <p><i class="fas fa-user-cog ml-1" aria-hidden="true"></i>Seigneur Gaëtan</p>
+                            <p><i class="fas fa-random ml-1" aria-hidden="true"></i>Administrateur</p>
+                            <p><i class="fas fa-sign-out-alt ml-1" aria-hidden="true"></i>Inscrit le : 20/11/2020</p>
+                        </div>
+
+                        <hr>
+
+                        <div class="m-auto text-center mt-3">
+                            <div class="title-profil">Menu de configuration</div>
+                        </div>
+
+                        <div class="m-auto mt-3 menu-profil">
+                            <ul class="list-unstyled text-center">
+                                <li class="pb-2"><a href="" id="membres"><i class="fas fa-users ml-2" aria-hidden="true"></i>Liste des membres</a></li>
+                                <li class="pb-2"><a href="" id="blog"><i class="fas fa-pen-square ml-2" aria-hidden="true"></i>Mon blog personnel</a></li>
+                                <li class="pb-2"><a href="" id="youtube"><i class="fab fa-youtube ml-2" aria-hidden="true"></i>Vidéos youtube</a></li>
+                                <li class="pb-2"><a href="" id="galerie"><i class="far fa-image ml-2" aria-hidden="true"></i>Ma galerie</a></li>
+                                <li class="pb-2"><a href="" id="projet"><i class="fas fa-project-diagram ml-2" aria-hidden="true"></i>Mes projets</a></li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <div class="m-auto text-center mt-3">
+                            <div class="title-profil">Une idée un ajout, c'est ici.</div>
+                        </div>
+
+                        <div class="m-auto mt-3 menu-profil">
+                            <ul class="list-unstyled text-center">
+                                <li class="pb-2"><a href="" id="add_news"><i class="fas fa-pencil-alt ml-2" aria-hidden="true"></i>Ajouter une actualité</a></li>
+                                <li class="pb-2"><a href="" id="add_article"><i class="fas fa-tag ml-2" aria-hidden="true"></i>Ajouter un article blog</a></li>
+                                <li class="pb-2"><a href="" id="add_membres"><i class="fas fa-star ml-2" aria-hidden="true"></i>Ajouter un nouveau membre</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js icons -->
+    <script src="../assets/vendor/icons/9d1d83a1dd.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/vendor/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+</body>
+
+</html>
