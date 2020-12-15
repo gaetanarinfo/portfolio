@@ -50,7 +50,7 @@
     position: relative
     margin: 0px auto 0 auto
     width: 1113px
-    height: 1113px
+    height: auto
     background-color: #616161
     border-top: 3px solid #000000bf
 
@@ -87,7 +87,7 @@ hr
 .article-social
     display: block
     position: relative
-    padding: 25px 50px 8px 50px
+    padding: 25px 50px 25px 50px
 
 .article-social p
     color: #e0e0e0
@@ -98,6 +98,105 @@ hr
 
 .article-social a
     color: #e0e0e0
+    transition: all 500ms
+    &:hover
+       color: #969494
 
 .article-social i
-    font-size: 24px   
+    font-size: 24px
+    transition: all 800ms 
+    &:hover
+        transform: rotate(40deg)  
+
+
+.article-comment
+    display: block
+    position: relative
+    margin: 33px auto 6px auto
+    padding: 4px 50px 25px 50px
+    border-radius: 5px
+    border: 2px solid #bdbabaa3
+    width: 91%
+    height: auto
+    background-color: #fafafa
+
+.box-comment
+    display: block
+    position: relative
+    padding: 0 0 21px 0
+    border-bottom: 2px solid #8c8a8a
+
+.comment-count
+    display: block
+    position: relative
+    padding: 10px 0px 0px 0px
+    font-size: 23px
+    font-family: 'Source Sans Pro', sans-serif
+    text-transform: uppercase
+    color: black
+
+.comment-profil
+    display: inline-block
+    position: relative
+    margin: -5px 0 0 0
+
+.comment-profil img
+    display: inline-block
+    position: relative
+    width: 62px
+    height: 62px
+
+.comment-author
+    display: inline-block
+    position: relative
+    top: 5px
+    font-size: 19px
+    color: #1779ba
+    font-family: 'Source Sans Pro', sans-serif
+
+.comment-date
+    display: block
+    position: relative
+    font-size: 14px
+    color: #616161
+    font-family: 'Source Sans Pro', sans-serif
+
+.comment-content
+    display: block
+    position: relative
+    font-size: 14px
+    color: #333333
+    font-family: 'Source Sans Pro', sans-serif
+
+.box-reply
+    display: block
+    position: relative
+    margin: 0px auto 33px auto
+    padding: 4px 50px 25px 50px
+    border-radius: 5px
+    border: 2px solid #bdbabaa3
+    width: 91%
+    height: auto
+    background-color: #fafafa
+
+
+.box-reply
+    display: block
+    position: relative
+
+.reply-title
+    padding: 10px 0px 0px 0px
+    font-size: 25px
+    font-weight: 500
+    font-family: 'Source Sans Pro', sans-serif
+    color: #000000    
+
+.reply-sub
+    display: block
+    position: relative
+    font-size: 15px
+    font-family: 'Source Sans Pro', sans-serif
+    color: #000000
+
+textarea
+    width: 100%
