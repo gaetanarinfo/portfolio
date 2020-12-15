@@ -38,12 +38,12 @@
 <div class="row">
     <div class="col-md-12">
         <div class="nav-per text-center">
-            <a href="#" class="btn btn-nav"><i class="fas fa-home"></i>Accueil</a>
-            <a href="#projet" class="btn btn-nav"><i class="fas fa-tag"></i>Projet</a>
-            <a href="#language" class="btn btn-nav"><i class="fab fa-html5"></i>Language</a>
-            <a href="#galerie" class="btn btn-nav"><i class="far fa-image"></i>Galerie</a>
-            <a href="#tuto" class="btn btn-nav"><i class="fab fa-youtube"></i>Tuto</a>
-            <a href="#article" class="btn btn-nav"><i class="far fa-newspaper"></i>Actu & Dev</a>
+            <a href="/index" class="btn btn-nav"><i class="fas fa-home"></i>Accueil</a>
+            <a href="/index#projet" class="btn btn-nav"><i class="fas fa-tag"></i>Projet</a>
+            <a href="/index#language" class="btn btn-nav"><i class="fab fa-html5"></i>Language</a>
+            <a href="/index#galerie" class="btn btn-nav"><i class="far fa-image"></i>Galerie</a>
+            <a href="/index#tuto" class="btn btn-nav"><i class="fab fa-youtube"></i>Tuto</a>
+            <a href="/index#article" class="btn btn-nav"><i class="far fa-newspaper"></i>Actu & Dev</a>
             <a href="#contact" class="btn btn-nav"><i class="fas fa-reply"></i>Contact</a>
             <a data-toggle="modal" data-target="#membres" class="btn btn-nav"><i class="fas fa-user"></i>Connexion</a>
         </div>
@@ -57,21 +57,21 @@
                         <i class="fab fa-accusoft"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"><i class="fas fa-home"></i>Accueil</a>
+                        <a class="dropdown-item" href="/index"><i class="fas fa-home"></i>Accueil</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#connaissances"><i class="far fa-comment"></i>Connaissances</a>
+                        <a class="dropdown-item" href="/index#connaissances"><i class="far fa-comment"></i>Connaissances</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="fas fa-tag"></i>Projet</a>
+                        <a class="dropdown-item" href="/index#projet"><i class="fas fa-tag"></i>Projet</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="fab fa-html5"></i>Language</a>
+                        <a class="dropdown-item" href="/index#language"><i class="fab fa-html5"></i>Language</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="far fa-image"></i>Galerie</a>
+                        <a class="dropdown-item" href="/index#galerie"><i class="far fa-image"></i>Galerie</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="fab fa-youtube"></i>Tuto</a>
+                        <a class="dropdown-item" href="/index#tuto"><i class="fab fa-youtube"></i>Tuto</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="far fa-newspaper"></i>Actu & Dev</a>
+                        <a class="dropdown-item" href="/index#article"><i class="far fa-newspaper"></i>Actu & Dev</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="fas fa-reply"></i>Contact</a>
+                        <a class="dropdown-item" href="#contact"><i class="fas fa-reply"></i>Contact</a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item" data-toggle="modal" data-target="#membres"><i class="fas fa-user"></i>Connexion</a>
                     </div>
