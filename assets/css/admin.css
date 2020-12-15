@@ -164,7 +164,7 @@ table a:hover {
   .container-menu-left {
     top: 0px !important;
     width: auto !important;
-    height: 132vh !important;
+    height: 87vh !important;
     background-color: #00000038 !important;
   }
 
@@ -186,6 +186,10 @@ table a:hover {
     top: 0 !important;
     right: 0 !important;
     left: 0 !important;
+  }
+
+  .menu-1 {
+    display: none;
   }
 }
 
