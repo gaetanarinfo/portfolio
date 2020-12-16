@@ -168,7 +168,11 @@
 
                     <p class="reply-sub">Commentaire :</p>
 
-                    <textarea class="mt-n2" rows="5"></textarea>
+                    <form id="form_reply" action="" method="POST">
+                        <textarea class="mt-n2" rows="8" id="contentA" name="contentA"></textarea>
+
+                        <button class="btn btn-form-send mt-3">Poster le commentaire</button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -10718,8 +10718,8 @@ header {
 /* HEADER FIN */
 /* BUTTON BOOTSTRAP FORM */ 
 .btn-form-send {
-  padding: 7px;
-  width: 96px;
+  padding: 7px 12px;
+  width: auto;
   height: 36px;
   font-family: "Arimo", sans-serif;
   font-weight: bold;
@@ -12506,6 +12506,14 @@ footer {
 }
 
 /* IMPORT SASS PAGE ARTICLE */   
+/* Global Article */
+hr {
+  margin: 0 auto;
+  width: 91%;
+  color: black;
+}
+
+/* Article */
 .article-head {
   display: block;
   position: relative;
@@ -12587,12 +12595,6 @@ footer {
   color: #e0e0e0;
 }
 
-hr {
-  margin: 0 auto;
-  width: 91%;
-  color: black;
-}
-
 .article-content {
   display: block;
   position: relative;
@@ -12636,13 +12638,17 @@ hr {
   transform: rotate(40deg);
 }
 
+/* Lire les commentaires */
 .article-comment {
   display: block;
   position: relative;
-  margin: 33px auto 6px auto;
+  margin: 33px auto 0px auto;
   padding: 4px 50px 25px 50px;
-  border-radius: 5px;
-  border: 2px solid #bdbabaa3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: 2px solid #bdbabaa3;
+  border-left: 2px solid #bdbabaa3;
+  border-right: 2px solid #bdbabaa3;
   width: 91%;
   height: auto;
   background-color: #fafafa;
@@ -12703,16 +12709,20 @@ hr {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+/* Envoyer un commentaire */   
 .box-reply {
   display: block;
   position: relative;
   margin: 0px auto 33px auto;
   padding: 4px 50px 25px 50px;
-  border-radius: 5px;
-  border: 2px solid #bdbabaa3;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 2px solid #bdbabaa3;
+  border-left: 2px solid #bdbabaa3;
+  border-right: 2px solid #bdbabaa3;
   width: 91%;
   height: auto;
-  background-color: #fafafa;
+  background-color: #f1ecec;
 }
 
 .box-reply {
@@ -12736,8 +12746,22 @@ hr {
   color: #000000;
 }
 
+/* Form */
 textarea {
+  padding: 10px 10px;
   width: 100%;
+  background-color: #f1ecec !important;
+  border: 1px solid darkgrey !important;
+  border-radius: 5px !important;
+  font-size: 13px;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
+  height: 50px;
+  transition: all 500ms !important;
+}
+textarea:focus {
+  padding: 14px 10px;
+  height: 174px;
 }
 
 /* GLOBAL */
