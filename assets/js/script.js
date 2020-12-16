@@ -1,3 +1,22 @@
+// Button To Top
+
+window.onscroll = function() { scrollFunction() };
+
+btn_top = document.querySelector(".btn_top");
+
+function scrollFunction() {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        btn_top.style.display = "block";
+    } else {
+        btn_top.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0; // Pour Safari
+    document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE and Opera
+}
+
 // Galerie
 function switchStyle() {
     if ($('#styleSwitch ').checked) {

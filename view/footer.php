@@ -84,6 +84,8 @@
 </div>
 <!-- Contact -->
 
+<a onclick="topFunction()" class="btn_top" title="Retour en haut"><i class="fas fa-angle-up"></i></a>
+
 <!-- Footer -->
 <footer class="page-footer mt-15 pt-4">
 
