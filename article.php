@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portfolio de Gaëtan Seigneur</title>
+    <title>Nom de l'article</title>
+    <meta name="description" content="Nom de l'article">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -117,9 +118,10 @@
                 <hr>
 
                 <div class="article-comment">
-                    <div class="box-comment" id="comment-1">
-                        <p class="comment-count">Commentaire(s) 0</p>
+                
+                    <p class="comment-count">Commentaire(s) 0</p>
 
+                    <div class="box-comment" id="comment-1">    
                         <div class="comment-profil">
                             <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/SA/en/999/EP0001-CUSA02376_00-AV00000000000011/1601165358000/image?w=240&amp;h=240&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000"
                                 alt="Gaëtan Seigneur" class="rounded-circle ml-3">
@@ -140,8 +142,6 @@
                     </div>
 
                     <div class="box-comment" id="comment-2">
-                        <p class="comment-count">Commentaire(s) 0</p>
-
                         <div class="comment-profil">
                             <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/SA/en/999/EP0001-CUSA02376_00-AV00000000000011/1601165358000/image?w=240&amp;h=240&amp;bg_color=000000&amp;opacity=100&amp;_version=00_09_000"
                                 alt="Gaëtan Seigneur" class="rounded-circle ml-3">

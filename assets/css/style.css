@@ -12505,7 +12505,7 @@ footer {
   background: rgba(0, 0, 0, 0.05);
 }
 
-/* IMPORT SASS PAGE ARTICLE */   
+/* IMPORT SASS PAGE ID */   
 /* Global Article */
 hr {
   margin: 0 auto;
@@ -12657,14 +12657,15 @@ hr {
 .box-comment {
   display: block;
   position: relative;
-  padding: 0 0 21px 0;
+  padding: 21px 0 21px 0;
   border-bottom: 2px solid #8c8a8a;
 }
 
 .comment-count {
   display: block;
   position: relative;
-  padding: 10px 0px 0px 0px;
+  margin: 15px auto -5px auto;
+  text-align: right;
   font-size: 23px;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
@@ -12764,6 +12765,7 @@ textarea:focus {
   height: 174px;
 }
 
+/* IMPORT SASS PAGE BLOG */   
 /* GLOBAL */
 body {
   margin: 0;
