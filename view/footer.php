@@ -61,8 +61,12 @@
                             <label for="inputSujet" class="mb-3">Votre sujet</label>
                             <select id="inputSujet" class="form-control">
                                 <option selected="">Choissisez un sujet...</option>
+                                <option disabled>---------</option>
                                 <option value="Bug">Bug</option>
+                                <option disabled>---------</option>
                                 <option value="Theme">Thème sur le site</option>
+                                <option disabled>---------</option>
+                                <option value="Autres">Autres sujet</option>
                             </select>
                         </div>
 
@@ -74,7 +78,7 @@
                     </div>
 
                     <div class="mt-4">
-                        <button type="submit" class="btn btn-form-send ml-5">Envoyer</button> <button type="reset"
+                        <button type="submit" class="btn btn-form-send ml-5">Envoyer le message</button> <button type="reset"
                             class="btn btn-form-reset">Effacer</button>
                     </div>
                 </form>

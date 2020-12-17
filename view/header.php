@@ -50,10 +50,11 @@
                 <a href="/index#language" class="btn btn-nav"><i class="fab fa-html5"></i>Language</a>
                 <a href="/index#galerie" class="btn btn-nav"><i class="far fa-image"></i>Galerie</a>
                 <a href="/index#tuto" class="btn btn-nav"><i class="fab fa-youtube"></i>Tuto</a>
-                <a href="/index#article" class="btn btn-nav"><i class="far fa-newspaper"></i>Actu & Dev</a>
+                <a href="/index" href="/blog" class="btn btn-nav"><i class="far fa-newspaper"></i>Actu & Dev</a>
                 <a href="#contact" class="btn btn-nav"><i class="fas fa-reply"></i>Contact</a>
                 <a data-toggle="modal" data-target="#membres" class="btn btn-nav"><i
                         class="fas fa-user"></i>Connexion</a>
+                <a id="close_nav" class="btn btn-nav btn-nav-2" title="Fermer la barre"><i class="fas fa-times"></i></a>    
             </div>
         </div>
     </div>
@@ -83,7 +84,7 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/index#tuto"><i class="fab fa-youtube"></i>Tuto</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/index#article"><i class="far fa-newspaper"></i>Actu &
+                            <a class="dropdown-item" href="/blog"><i class="far fa-newspaper"></i>Actu &
                                 Dev</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#contact"><i class="fas fa-reply"></i>Contact</a>

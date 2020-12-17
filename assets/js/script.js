@@ -8,6 +8,8 @@ window.onscroll = function() { scrollFunction() };
 var btn_top = document.querySelector(".btn_top");
 var nav_top_1 = document.getElementById("navbar_1");
 var nav_top_2 = document.getElementById("navbar_2");
+var close = document.getElementById("close_nav");
+var nav = localStorage.getItem('nav');
 
 // Function Scrollable
 function scrollFunction() {
@@ -17,15 +19,21 @@ function scrollFunction() {
         btn_top.style.display = "none";
     }
 
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-        nav_top_1.classList.add("fixed-bottom");
-        nav_top_2.style.margin = "0 auto";
-        nav_top_2.style.top = "0%";
-    } else {
-        nav_top_1.classList.remove("fixed-bottom");
-        nav_top_2.style.margin = "-70px auto -21px 0";
-        nav_top_2.style.top = "-76%";
-        nav_top_2.querySelector('a').style.margin = "0 auto";
+    if (nav != "oui") {
+
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            nav_top_1.classList.add("fixed-bottom");
+            nav_top_2.style.margin = "0 auto";
+            nav_top_2.style.top = "0%";
+            close.style.display = 'inline-block';
+        } else {
+            nav_top_1.classList.remove("fixed-bottom");
+            nav_top_2.style.margin = "-70px auto -21px 0";
+            nav_top_2.style.top = "-76%";
+            nav_top_2.querySelector('a').style.margin = "0 auto";
+            close.style.display = 'none';
+        }
+
     }
 
 }
@@ -34,6 +42,12 @@ function topFunction() {
     document.body.scrollTop = 0; // Pour Safari
     document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE and Opera
 }
+
+//Boutton pour fermer la bar de nav en bas
+close.addEventListener('click', function(event) {
+    localStorage.setItem('nav', 'oui');
+    setTimeout(function() { document.location.reload(); }, 1000);
+})
 
 // Galerie
 function switchStyle() {
