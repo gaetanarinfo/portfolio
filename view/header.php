@@ -34,10 +34,10 @@
 </div>
 </header>
 
-<div class="container">
+<div class="container" id="navbar_1">
 <div class="row">
     <div class="col-md-12">
-        <div class="nav-per text-center">
+        <div class="nav-per text-center" id="navbar_2">
             <a href="/index" class="btn btn-nav"><i class="fas fa-home"></i>Accueil</a>
             <a href="/index#projet" class="btn btn-nav"><i class="fas fa-tag"></i>Projet</a>
             <a href="/index#language" class="btn btn-nav"><i class="fab fa-html5"></i>Language</a>

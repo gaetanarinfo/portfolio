@@ -2,7 +2,10 @@
 
 window.onscroll = function() { scrollFunction() };
 
-btn_top = document.querySelector(".btn_top");
+const btn_top = document.querySelector(".btn_top");
+
+var nav_top_1 = document.getElementById("navbar_1");
+var nav_top_2 = document.getElementById("navbar_2");
 
 function scrollFunction() {
     if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
@@ -10,6 +13,18 @@ function scrollFunction() {
     } else {
         btn_top.style.display = "none";
     }
+
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        nav_top_1.classList.add("fixed-bottom");
+        nav_top_2.style.margin = "0 auto";
+        nav_top_2.style.top = "0%";
+    } else {
+        nav_top_1.classList.remove("fixed-bottom");
+        nav_top_2.style.margin = "-70px auto -21px 0";
+        nav_top_2.style.top = "-76%";
+        nav_top_2.querySelector('a').style.margin = "0 auto";
+    }
+
 }
 
 function topFunction() {
@@ -94,6 +109,7 @@ $('#inscription2').click(function() {
         $('#inscription-modal').removeClass('d-none');
     }, 550);
 });
+
 // Modal Inscription Connexion Mot de passe perdu
 
 // Toast Bootstrap
