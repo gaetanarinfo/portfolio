@@ -1,12 +1,15 @@
-// Button To Top
+// Les conditions d'écrans
 
+
+// Lancement de la function
 window.onscroll = function() { scrollFunction() };
 
-const btn_top = document.querySelector(".btn_top");
-
+// Déclaration des constantes
+var btn_top = document.querySelector(".btn_top");
 var nav_top_1 = document.getElementById("navbar_1");
 var nav_top_2 = document.getElementById("navbar_2");
 
+// Function Scrollable
 function scrollFunction() {
     if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
         btn_top.style.display = "block";
@@ -123,3 +126,55 @@ $('#inscription2').click(function() {
 //    $('#message_erreur').toast('show')
 //}, 3000);
 // Toast Bootstrap
+
+// Télécharger CV
+
+const btn_cv = document.getElementById('dev-cv');
+
+btn_cv.addEventListener('click', function(e) {
+
+    e.preventDefault();
+
+    const progress_bar = document.querySelector('.progress_bar');
+    const done = document.querySelector('#done');
+    const progressBar = document.querySelector('.progress-bar');
+
+    progress_bar.style.display = 'block';
+    progress_bar.style.margin = '0 auto -14px auto';
+    btn_cv.style.display = 'none';
+
+    let p = 0
+
+    function timeout(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms))
+    }
+
+    async function progress() {
+
+        await timeout(Math.floor(Math.random() * 200) + 200)
+
+        p += Math.ceil(Math.random() * 7) + 5
+
+        if (p < 100) {
+            progressBar.value = p
+            progress()
+            done.innerHTML = `${p}%`
+        } else {
+            progressBar.value = 100
+            done.innerHTML = 'Fichier télécharger 🎒 !'
+            await timeout(100)
+            progressBar.classList.remove('progress-bar')
+
+            done.style.margin = "0px auto 0 auto";
+
+            windowObjectReference = window.open(
+                "http://gaetan.store/documents/Seigneur_Gaetan_CV.pdf",
+                "CV",
+                "resizable,scrollbars,status"
+            );
+        }
+
+    }
+
+    progress()
+})

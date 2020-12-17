@@ -229,6 +229,20 @@ img.zoom
 .thumb
     margin-bottom: 30px
 
+.thumb-title
+    margin: 29px auto 0 auto
+    padding: 9px 17px
+    background-color: #000000c2
+    box-shadow: 0 0 4px 0px #0000006b
+    color: white
+    z-index: 99999
+    left: -2px
+    display: block
+    position: relative
+    text-align: center
+    font-family: 'Lobster'
+    letter-spacing: 1px
+
 /* Section 5 */
 
 .card-yt
@@ -370,3 +384,22 @@ img.zoom
     cursor: pointer
     &:hover
         opacity: 0.6     
+
+/* Animation Image */
+
+.zoom-out
+    -webkit-transform: scale(1)
+    transform: scale(1)
+    -webkit-transition: .3s ease-in-out
+    transition: .3s ease-in-out
+    &:hover
+        -webkit-transform: scale(0.5)
+        transform: scale(0.5)
+
+.card, .card-img-top
+    transition: all 500ms
+    &:hover .card-img-top
+        -webkit-transform: scale(0.9)
+        transform: scale(0.9)
+        border-radius: 5px
+        opacity: 0.8

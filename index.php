@@ -48,7 +48,7 @@
 
     <?php include_once 'view/section/section4.php'; ?>
 
-    <div class="container mt-3">
+    <div class="container mt-1">
         <div class="row">
             <div class="col-md-12">
                 <div class="separator"></div>
