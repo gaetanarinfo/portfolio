@@ -2,15 +2,10 @@
 <header>
 
     <div class="container">
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
             <figure class="logo-header">
                 <img src="assets/images/logo.jpeg" alt="Logo">
             </figure>
-
-            <div class="header-search">
-                <i class="fas fa-search"></i>
-                <input type="text" class="form-control" placeholder="Faites votre recherche" aria-label="search">
-            </div>
         </div>
     </div>
 
@@ -33,6 +28,11 @@
                             <div class="legend">
                                 <span class="done" id="done">0%</span>
                             </div>
+                        </div>
+
+                        <div class="header-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" class="form-control" placeholder="Faites votre recherche" aria-label="search">
                         </div>
                     </div>
                 </div>
