@@ -1,10 +1,10 @@
 <!-- Notification -->
-<div class="fixed-top">
+<!-- <div class="fixed-top">
     <div aria-live="polite" aria-atomic="true" style="position: relative;">
-        <!-- Position it -->
+        
         <div style="position: absolute; top: 5px; right: 7px;">
 
-            <!-- Then put toasts within -->
+
             <div id="message_valide" class="toast" data-delay="600000" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
 
@@ -33,5 +33,5 @@
 
         </div>
     </div>
-</div>
+</div> -->
 <!-- Notification -->
