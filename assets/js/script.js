@@ -8,32 +8,23 @@ window.onscroll = function() { scrollFunction() };
 var btn_top = document.querySelector(".btn_top");
 var nav_top_1 = document.getElementById("navbar_1");
 var nav_top_2 = document.getElementById("navbar_2");
-var close = document.getElementById("close_nav");
-var nav = localStorage.getItem('nav');
 
 // Function Scrollable
 function scrollFunction() {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
         btn_top.style.display = "block";
     } else {
         btn_top.style.display = "none";
     }
 
-    if (nav != "oui") {
-
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            nav_top_1.classList.add("fixed-bottom");
-            nav_top_2.style.margin = "0 auto";
-            nav_top_2.style.top = "0%";
-            close.style.display = 'inline-block';
-        } else {
-            nav_top_1.classList.remove("fixed-bottom");
-            nav_top_2.style.margin = "-70px auto -21px 0";
-            nav_top_2.style.top = "-76%";
-            nav_top_2.querySelector('a').style.margin = "0 auto";
-            close.style.display = 'none';
-        }
-
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        nav_top_1.style.display = "none";
+        nav_top_2.style.display = "block";
+        nav_top_2.classList.add("fixed-top");
+    } else {
+        nav_top_1.style.display = "block";
+        nav_top_2.style.display = "none";
+        nav_top_2.classList.remove("fixed-top");
     }
 
 }
@@ -42,12 +33,6 @@ function topFunction() {
     document.body.scrollTop = 0; // Pour Safari
     document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE and Opera
 }
-
-//Boutton pour fermer la bar de nav en bas
-close.addEventListener('click', function(event) {
-    localStorage.setItem('nav', 'oui');
-    setTimeout(function() { document.location.reload(); }, 1000);
-})
 
 // Galerie
 function switchStyle() {

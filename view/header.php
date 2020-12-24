@@ -44,7 +44,7 @@
 <div class="container" id="navbar_1">
     <div class="row">
         <div class="col-md-12">
-            <div class="nav-per text-center" id="navbar_2">
+            <div class="nav-per text-center">
                 <a href="/index" class="btn btn-nav"><i class="fas fa-home"></i>Accueil</a>
                 <a href="/index#projet" class="btn btn-nav"><i class="fas fa-tag"></i>Projet</a>
                 <a href="/index#language" class="btn btn-nav"><i class="fab fa-html5"></i>Language</a>
@@ -53,8 +53,25 @@
                 <a href="/index" href="/blog" class="btn btn-nav"><i class="far fa-newspaper"></i>Actu & Dev</a>
                 <a href="#contact" class="btn btn-nav"><i class="fas fa-reply"></i>Contact</a>
                 <a data-toggle="modal" data-target="#membres" class="btn btn-nav"><i
+                        class="fas fa-user"></i>Connexion</a> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="navbar_2">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="nav-per2 text-center">
+                <a href="/index" class="btn btn-nav btn-nav2"><i class="fas fa-home"></i>Accueil</a>
+                <a href="/index#projet" class="btn btn-nav btn-nav2"><i class="fas fa-tag"></i>Projet</a>
+                <a href="/index#language" class="btn btn-nav btn-nav2"><i class="fab fa-html5"></i>Language</a>
+                <a href="/index#galerie" class="btn btn-nav btn-nav2"><i class="far fa-image"></i>Galerie</a>
+                <a href="/index#tuto" class="btn btn-nav btn-nav2"><i class="fab fa-youtube"></i>Tuto</a>
+                <a href="/index" href="/blog" class="btn btn-nav btn-nav2"><i class="far fa-newspaper"></i>Actu & Dev</a>
+                <a href="#contact" class="btn btn-nav btn-nav2"><i class="fas fa-reply"></i>Contact</a>
+                <a data-toggle="modal" data-target="#membres" class="btn btn-nav btn-nav2"><i
                         class="fas fa-user"></i>Connexion</a>
-                <a id="close_nav" class="btn btn-nav btn-nav-2" title="Fermer la barre"><i class="fas fa-times"></i></a>    
             </div>
         </div>
     </div>
