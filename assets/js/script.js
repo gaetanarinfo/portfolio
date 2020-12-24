@@ -140,6 +140,7 @@ btn_cv.addEventListener('click', function(e) {
 
     progress_bar.style.display = 'block';
     progress_bar.style.margin = '0 auto -14px auto';
+    done.style.margin = "0 auto 27px auto";
     btn_cv.style.display = 'none';
 
     let p = 0
@@ -163,8 +164,6 @@ btn_cv.addEventListener('click', function(e) {
             done.innerHTML = 'Fichier télécharger 🎒 !'
             await timeout(100)
             progressBar.classList.remove('progress-bar')
-
-            done.style.margin = "0px auto 0 auto";
 
             windowObjectReference = window.open(
                 "http://gaetan.store/documents/Seigneur_Gaetan_CV.pdf",
